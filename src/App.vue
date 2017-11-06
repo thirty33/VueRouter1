@@ -21,6 +21,10 @@
       <a href="">Usuario</a>
     </router-link>
 
+    <router-link to="/Usuario/99" exact active-class="active" tag="li">
+      <a href="">Usuario</a>
+    </router-link>
+
     <router-view></router-view>
 
 

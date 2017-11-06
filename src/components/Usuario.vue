@@ -10,6 +10,12 @@
 				// no confundir router con route
 				id: this.$route.params.id
 			}
+		},
+		watch: {
+			// Reactividad en las rutas
+			'$route'(to) {
+				this.id = to.$route.params.id
+			}
 		}
 	}
 </script>
