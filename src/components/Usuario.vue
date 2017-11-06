@@ -1,5 +1,11 @@
 <template>
-	<h2>{{ id }}</h2>
+	<section>
+		
+		<h2>hola {{ id }} (this is an identificator)</h2>
+		<router-link :to="'/equipo/' + id + '/fotos'">ve mis fotos</router-link>
+		<router-link :to="'/equipo/' + id + '/bio'">ve mis bio</router-link>
+		<router-view></router-view>
+	</section>
 </template>
 
 
