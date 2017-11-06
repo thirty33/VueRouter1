@@ -15,7 +15,11 @@
       <a href="">Portada</a>
     </router-link>
 
+    <h1>Usuarios con dinamic routes</h1>
  
+    <router-link to="/Usuario/77" exact active-class="active" tag="li">
+      <a href="">Usuario</a>
+    </router-link>
 
     <router-view></router-view>
 
