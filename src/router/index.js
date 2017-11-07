@@ -37,14 +37,14 @@ export default new Router({
     },
     {
       path: '/equipo/:id',
-      name: 'equipo',
+      // name: 'equipo',
       // nested routes
       component: Equipo, children: [
       	{
       		path: '',
-      		component: Usuario, children: [
-      			{path: 'fotos', component: Usuariofotos},
-      			{path: 'bio', component: Usuariobio},
+      		component: Usuario, name:'equipo', children: [
+      			{path: 'fotos', name: 'fotos', component: Usuariofotos},
+      			{path: 'bio', name: 'bio', component: Usuariobio},
 
       		]
       	}
