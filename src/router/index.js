@@ -71,6 +71,15 @@ export default new Router({
 
       ]
     },
+    {
+    	path: '/prueba',
+    	// la url se mantiene como /prueba
+    	alias: '/otraprueba',
+    	// redirect: '/',
+    	redirect: {name: 'home'},
+    	component: Home,
+
+    }
    
   ]
 })
