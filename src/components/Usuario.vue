@@ -8,10 +8,10 @@
 
 		
 
-		<router-link :to="{name: 'fotos', params: {id: id}}">ve mis fotos</router-link>
+		<!-- <router-link :to="{name: 'fotos', params: {id: id}}">ve mis fotos</router-link>
 
 
-		<router-link :to="{name: 'bio', params: {id: id}}">ve mis bio</router-link>
+		<router-link :to="{name: 'bio', params: {id: id}}">ve mis bio</router-link> -->
 
 		<router-view></router-view>
 	</section>

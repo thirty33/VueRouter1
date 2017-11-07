@@ -35,6 +35,24 @@ export default new Router({
       name: 'usuario',
       component: Usuario
     },
+    // {
+    //   path: '/equipo/:id',
+    //   // name: 'equipo',
+    //   // nested routes
+    //   component: Equipo, children: [
+    //   	{
+    //   		path: '',
+    //   		component: Usuario, name:'equipo',
+    //   		children: [
+    //   			{path: 'fotos', name: 'fotos', component: Usuariofotos},
+    //   			{path: 'bio', name: 'bio', component: Usuariobio},
+
+    //   		]
+    //   	}
+
+    //   ]
+    // },
+    // con named views
     {
       path: '/equipo/:id',
       // name: 'equipo',
@@ -42,11 +60,13 @@ export default new Router({
       component: Equipo, children: [
       	{
       		path: '',
-      		component: Usuario, name:'equipo', children: [
-      			{path: 'fotos', name: 'fotos', component: Usuariofotos},
-      			{path: 'bio', name: 'bio', component: Usuariobio},
+      		components: {
+      			default: Usuario,
+      			bio: Usuariobio,
+      			fotos: Usuariofotos
 
-      		]
+      		}, name:'equipo',
+      		
       	}
 
       ]
